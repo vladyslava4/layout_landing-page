@@ -1,0 +1,31 @@
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s;
+
+  @include hover(transform, scale(1.2));
+
+  @include onTablet {
+    width: 32px;
+    height: 32px;
+  }
+
+  &--phone {
+    background-image: url(../imeges/Icon-Phone-call-svg.svg);
+  }
+
+  &--menu {
+    background-image: url(../imeges/Icon-Burger-menu-svg.svg);
+
+    &:hover {
+      background-image: url(../imeges/Icon-Burger-menu-hover-svg.svg);
+    }
+  }
+
+  &--close {
+    background-image: url(../imeges/Icon-Close.svg);
+  }
+}

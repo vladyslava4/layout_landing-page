@@ -1,0 +1,39 @@
+.categories {
+  display: grid;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  &__category {
+    margin: 0;
+  }
+
+  &__load-more-button {
+    padding-inline: 48px;
+
+    width: 324px;
+    height: 56px;
+
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0;
+    text-align: center;
+
+    border-radius: 8px;
+    border: 2px solid #f98921;
+    cursor: pointer;
+    background-color: #f98921;
+    color: #fff;
+    transition: all 0.3s linear;
+
+    &:hover {
+      background-color: #fff;
+      color: #f98921;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.how-to-buy {
+  background-color: #fcfaef;
+
+  &__content {
+    @include pageGrid;
+  }
+
+  &__title {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 1 / 4;
+    }
+
+    @include onDesktop {
+      grid-column: span 6;
+    }
+  }
+
+  &__description {
+    grid-column: 1 / -1;
+
+    @include onTablet {
+      grid-column: 4 / 7;
+    }
+
+    @include onDesktop {
+      grid-column: 8 / -1;
+    }
+
+    line-height: 140%;
+    display: grid;
+
+    margin-bottom: 120px;
+
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.15px;
+  }
+}
