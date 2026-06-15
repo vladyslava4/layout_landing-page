@@ -1,6 +1,6 @@
 .category {
   &__photos {
-    @include pageGrid;
+    @include page-grid;
 
     margin: 0 0 16px;
   }
@@ -9,26 +9,26 @@
     position: relative;
     display: flex;
 
-    @include onDesktop {
+    @include on-desktop {
       height: 324px;
     }
 
     &--wide {
-      @include onTablet {
+      @include on-tablet {
         grid-column: span 3;
       }
 
-      @include onDesktop {
+      @include on-desktop {
         grid-column: span 6;
       }
     }
 
     &--square {
-      @include onTablet {
+      @include on-tablet {
         grid-column: span 3;
       }
 
-      @include onDesktopp {
+      @include on-desktop {
         grid-column: span 6;
       }
     }
