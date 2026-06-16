@@ -59,16 +59,16 @@
           <nav class="nav menu__nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link" href="#Recommended">Recommended</a>
+                <a class="nav__link" href="#recommended">Recommended</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#Categorie">Categories</a>
+                <a class="nav__link" href="#categories">Categories</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#About-us">About us</a>
+                <a class="nav__link" href="#how-to-buy">About us</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#Contacts">Contacts</a>
+                <a class="nav__link" href="#contacts">Contacts</a>
               </li>
             </ul>
           </nav>
@@ -235,7 +235,9 @@
           <h2 class="section__title">Contact us</h2>
           <div class="contacts__wrapper">
             <!-- prettier-ignore -->
-            <form class="contacts__form">
+            <form class="contacts__form"
+  onsubmit="this.reset(); return false;"
+>
 
 
               <input class="contacts__input"
@@ -243,7 +245,7 @@
                 placeholder="Name" />
 
               <input class="contacts__input"
-              type="text"
+              type="email"
               placeholder="Email" />
 
               <!-- prettier-ignore -->
@@ -252,28 +254,36 @@
   placeholder="Message"
 ></textarea>
 
-              <button class="contacts__button" type="button">Send</button>
+              <button class="contacts__button" type="submit">Send</button>
             </form>
 
             <div class="contacts__info">
               <div class="contacts__info-item">
                 <h4 class="contacts__label">Phone</h4>
-                <p class="contacts__value">+1 234 5555-55-55</p>
+                <a href="tel:+123455555555" class="contacts__value">
+                  +1 234 5555-55-55
+                </a>
               </div>
 
               <div class="contacts__info-item">
                 <h4 class="contacts__label">Email</h4>
-                <p class="contacts__value">hello@nothing.com</p>
+                <a href="mailto:hello@nothing.com" class="contacts__value">
+                  hello@nothing.com
+                </a>
               </div>
 
               <div class="contacts__info-item">
                 <h4 class="contacts__label">Address</h4>
 
-                <p class="contacts__value">
+                <a
+                  href="https://maps.google.com/?q=400 First Ave Suite 700 Minneapolis MN 55401"
+                  target="_blank"
+                  class="contacts__value"
+                >
                   400 first ave.<br />
                   suite 700<br />
                   Minneapolis, MN 55401
-                </p>
+                </a>
               </div>
             </div>
           </div>

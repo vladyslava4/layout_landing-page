@@ -14,7 +14,25 @@
   }
 
   &--phone {
+    position: relative;
+
     background-image: url(../imeges/Icon-Phone-call-svg.svg);
+
+    &::before {
+      content: "+1 234 555-55-55";
+      position: absolute;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%);
+      white-space: nowrap;
+
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+    &:hover::before {
+      opacity: 1;
+    }
   }
 
   &--menu {

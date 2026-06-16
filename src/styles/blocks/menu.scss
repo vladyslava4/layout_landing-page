@@ -1,13 +1,23 @@
+.page__body:has(.menu:target) {
+  overflow: hidden;
+}
+
 .menu {
   box-sizing: border-box;
   height: 100vh;
   background-color: #f9f9f9;
+  overflow-y: auto;
 
   &__nav {
     margin-bottom: 40px;
   }
 
   &__top {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #f9f9f9;
+
     margin-bottom: 32px;
 
     @include on-tablet {

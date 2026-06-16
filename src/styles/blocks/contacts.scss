@@ -50,6 +50,15 @@
     border: none;
     outline: none;
     border-radius: 8px;
+    border: 2px solid transparent;
+
+    &:hover {
+      border-color: #dbdbdb;
+    }
+
+    &:focus {
+      border-color: #f98921;
+    }
   }
 
   &__input--message {
